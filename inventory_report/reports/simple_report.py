@@ -36,7 +36,7 @@ class SimpleReport:
             else:
                 largest[product.company_name] += 1
 
-        return max(larg for larg in largest)
+        return max(largest, key=lambda item: largest[item])
 
     def generate(self) -> str:
         return (

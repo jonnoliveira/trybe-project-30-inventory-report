@@ -80,10 +80,6 @@ class CsvImporter(Importer):
             return list_products
 
 
-a = CsvImporter("inventory_report/data/inventory.csv")
-print(a.import_data())
-
-
 # Não altere a variável abaixo
 
 IMPORTERS: Dict[str, Type[Importer]] = {
